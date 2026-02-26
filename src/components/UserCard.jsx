@@ -6,7 +6,7 @@ const UserCard = ({ name, designation, imageUrl, iconUrl }) => {
       
       {/* Profile Image Container */}
       <div className="relative my-3">
-        <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-50">
+        <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-gray-50">
           <img 
             src={imageUrl} 
             alt={name} 
@@ -16,7 +16,7 @@ const UserCard = ({ name, designation, imageUrl, iconUrl }) => {
         
         {/* Floating Badge/Icon */}
         <div className="absolute bottom-2 right-0">
-          <img src={iconUrl} alt="icon" className='w-10 h-10'/>
+          <img src={iconUrl} alt="icon" className='w-6 h-6 sm:w-10 sm:h-10'/>
         </div>
       </div>
 

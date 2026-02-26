@@ -1,21 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import ControlBar from "./components/ControlBar";
 import UserCard from "./components/UserCard";
 
-// Import user images
+// Importing user images
 import user1 from "./assets/user1.png";
 import user2 from "./assets/user2.png";
 import user3 from "./assets/user3.png";
 import user4 from "./assets/user4.png";
 import user5 from "./assets/user5.png";
 import user6 from "./assets/user6.png";
-import myProfile from "./assets/my-profile.png";
 
-
-// Import icons
+// Importing icons
 import v1 from "./assets/v1.svg";
 import v2 from "./assets/v2.svg";
 import v3 from "./assets/v3.svg";
@@ -98,19 +96,23 @@ const users = [
   }
 ];
 
-
 import Pagination from "./components/Pagination";
 
 function App() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
-    <div className="app-container fixed top-0 h-screen max-w-420 mx-auto p-4 flex bg-gray-100">
-      <Sidebar />
-      <div className="content w-full pl-4 h-screen">
-        <Navbar />
+    <div className="app-container p-2 md:p-4 h-screen flex bg-gray-100">
+      <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <div className="content w-full md:pl-4">
+        <Navbar toggleSidebar={toggleSidebar} />
         <div className="main-content mt-4 h-[calc(100vh-128px)] rounded-[20px] bg-white flex flex-col relative">
           <ControlBar />
           <div className="overflow-y-auto hide-scrollbar">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 pb-16">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 px-4 sm:px-6 pb-16">
               {users.map((user, index) => (
                 <UserCard
                   key={index}
