@@ -11,7 +11,7 @@ import settingsIcon from "../assets/settings-icon.svg";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar rounded-[20px]">
+    <div className="sidebar min-w-72 rounded-[20px]">
       <div className="sidebar-logo">
         <img src={logo} alt="Logo" />
         <img src={leftArrowDouble} alt="-" />

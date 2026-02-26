@@ -2,7 +2,7 @@ import React from 'react';
 
 const UserCard = ({ name, designation, imageUrl, iconUrl }) => {
   return (
-    <div className="max-w-64 mx-auto bg-white rounded-[20px] aspect-square border border-gray-200 shadow-sm p-2 flex flex-col items-center font-sans">
+    <div className="bg-white rounded-[20px] aspect-square border border-gray-200 shadow-sm p-2 flex flex-col items-center font-sans">
       
       {/* Profile Image Container */}
       <div className="relative my-3">

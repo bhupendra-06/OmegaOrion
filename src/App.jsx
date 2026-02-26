@@ -59,31 +59,71 @@ const users = [
     designation: "Finance Head",
     imageUrl: user6,
     iconUrl: v6,
-  }
+  },
+  {
+    name: "Ethan Lee",
+    designation: "IT Specialist",
+    imageUrl: user1,
+    iconUrl: v1,
+  },
+  {
+    name: "Emily Baker",
+    designation: "Marketing Manager",
+    imageUrl: user2,
+    iconUrl: v2,
+  },
+  // {
+  //   name: "Micheal Shaun",
+  //   designation: "Sales Director",
+  //   imageUrl: user3,
+  //   iconUrl: v3,
+  // },
+  // {
+  //   name: "Liam Carter",
+  //   designation: "Product Designer",
+  //   imageUrl: user4,
+  //   iconUrl: v4,
+  // },
+  // {
+  //   name: "Grace Kim",
+  //   designation: "Customer Lead",
+  //   imageUrl: user5,
+  //   iconUrl: v5,
+  // },
+  // {
+  //   name: "Noah Williams",
+  //   designation: "Finance Head",
+  //   imageUrl: user6,
+  //   iconUrl: v6,
+  // }
 ];
 
 
+import Pagination from "./components/Pagination";
+
 function App() {
   return (
-    <div className="app-container h-screen p-4 flex bg-gray-100">
+    <div className="app-container fixed top-0 h-screen max-w-420 mx-auto p-4 flex bg-gray-100">
       <Sidebar />
       <div className="content w-full pl-4 h-screen">
         <Navbar />
-        <div className="main-content mt-4 h-full">
+        <div className="main-content mt-4 h-[calc(100vh-128px)] rounded-[20px] bg-white flex flex-col relative">
           <ControlBar />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-evenly p-4 mt-4 bg-white">
-            {users.map((user, index) => (
-              <UserCard
-                key={index}
-                name={user.name}
-                designation={user.designation}
-                imageUrl={user.imageUrl}
-                iconUrl={user.iconUrl}
-              />
-            ))}
+          <div className="overflow-y-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 pb-16">
+              {users.map((user, index) => (
+                <UserCard
+                  key={index}
+                  name={user.name}
+                  designation={user.designation}
+                  imageUrl={user.imageUrl}
+                  iconUrl={user.iconUrl}
+                />
+              ))}
+            </div>
           </div>
+          <Pagination />
         </div>
-
       </div>
     </div>
   );

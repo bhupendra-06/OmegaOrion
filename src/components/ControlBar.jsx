@@ -4,8 +4,8 @@ import downloadIcon from '../assets/downloads.svg';
 import filterIcon from '../assets/filter.svg';
 import plusIcon from '../assets/plus-icon.svg';
 import gridIcon from '../assets/grid.svg';
-import rowsIcon from '../assets/v2.svg'; // Assuming v2 is for rows
-import networkIcon from '../assets/v3.svg'; // Assuming v3 is for network
+import rowsIcon from '../assets/rows.svg'; // Assuming v2 is for rows
+import networkIcon from '../assets/network.svg'; // Assuming v3 is for network
 
 const ControlBar = () => {
   return (
@@ -45,10 +45,10 @@ const ControlBar = () => {
             <img src={gridIcon} alt="Grid View" className="w-7 h-7" />
           </button>
           <button className="p-1 text-gray-500 hover:text-gray-700">
-            <img src={rowsIcon} alt="Rows View" className="w-7 h-7" />
+            <img src={rowsIcon} alt="Rows View" className="w-6 h-6" />
           </button>
           <button className="p-1 text-gray-500 hover:text-gray-700">
-            <img src={networkIcon} alt="Network View" className="w-7 h-7" />
+            <img src={networkIcon} alt="Network View" className="w-6 h-6" />
           </button>
         </div>
       </div>
