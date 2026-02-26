@@ -72,30 +72,30 @@ const users = [
     imageUrl: user2,
     iconUrl: v2,
   },
-  // {
-  //   name: "Micheal Shaun",
-  //   designation: "Sales Director",
-  //   imageUrl: user3,
-  //   iconUrl: v3,
-  // },
-  // {
-  //   name: "Liam Carter",
-  //   designation: "Product Designer",
-  //   imageUrl: user4,
-  //   iconUrl: v4,
-  // },
-  // {
-  //   name: "Grace Kim",
-  //   designation: "Customer Lead",
-  //   imageUrl: user5,
-  //   iconUrl: v5,
-  // },
-  // {
-  //   name: "Noah Williams",
-  //   designation: "Finance Head",
-  //   imageUrl: user6,
-  //   iconUrl: v6,
-  // }
+  {
+    name: "Micheal Shaun",
+    designation: "Sales Director",
+    imageUrl: user3,
+    iconUrl: v3,
+  },
+  {
+    name: "Liam Carter",
+    designation: "Product Designer",
+    imageUrl: user4,
+    iconUrl: v4,
+  },
+  {
+    name: "Grace Kim",
+    designation: "Customer Lead",
+    imageUrl: user5,
+    iconUrl: v5,
+  },
+  {
+    name: "Noah Williams",
+    designation: "Finance Head",
+    imageUrl: user6,
+    iconUrl: v6,
+  }
 ];
 
 
@@ -109,7 +109,7 @@ function App() {
         <Navbar />
         <div className="main-content mt-4 h-[calc(100vh-128px)] rounded-[20px] bg-white flex flex-col relative">
           <ControlBar />
-          <div className="overflow-y-auto">
+          <div className="overflow-y-auto hide-scrollbar">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 pb-16">
               {users.map((user, index) => (
                 <UserCard
