@@ -1,16 +1,70 @@
-# React + Vite
+# CORE Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a frontend implementation based on the provided figma design for a task.
+The UI has been developed to closely match the figma design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- React (Vite)
+- Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Deployed on Vercel
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Setup Instructions
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/bhupendra-06/OmegaOrion.git
+```
+
+2. Navigate into the project directory
+
+```bash
+cd OmegaOrion
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start development server
+
+```bash
+npm run dev
+```
+
+5. Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## Live Demo
+
+Live URL:  
+https://omegaorion-bhupendra.vercel.app/
+
+---
+
+## Responsiveness
+
+The application is fully responsive and optimized for:
+
+- Desktop
+- Tablet
+- Mobile devices
+
+---
+
+## Made By
+
+Bhupendra Nirmalkar

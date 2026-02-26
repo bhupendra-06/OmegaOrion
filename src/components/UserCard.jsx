@@ -22,7 +22,7 @@ const UserCard = ({ name, designation, imageUrl, iconUrl }) => {
 
       {/* Content */}
       <div className="text-center">
-        <h2 className="font-bold text-[#424242] mb-1">
+        <h2 className="font-semibold text-[#424242] mb-1">
           {name}
         </h2>
         <p className="text-[#a68a5bc9] text-sm font-medium mb-2">
